@@ -1,62 +1,79 @@
 <!DOCTYPE html>
-
+ 
 <html>
-
+ 
 <head>
 	<link rel="stylesheet" href="styles.css">
 </head>
-
+ 
 <body>
 	<!-- the entire body must be written by student -->
-
-	<form id= method="post">
-		<label for="#name"> Name*</label>
-			<input type="text" id="#name">
-        <br>
-			<label for="#email"> Email*</label>
-			<input type="email" id="#email">
+	<form id="my-form" method="POST" >
+		
+	<div>
+		<label for="name">Name*</label>
+		<input type="text" name="name" id="name" placeholder="enter name" required>
+	</div> <br>
+ 
+	<div>
+		<label for="email">Email*</label>
+		<input type="email" name="email" id="email" placeholder="eg: abcd@gmail.com" required>
+	</div> 
 		<br>
-			<label for="gender"> Gender*</label>
-			<span>Male</span>
-			<input type="radio" id="gender">
-			<span>Female</span>
-			<input type="radio" id="gender">
-        <br>
-			<label for="#laptop"> Laptop</label>
-			<span>Apple</span>
-			<input type="checkbox" id="#laptop">
-			<span>Asus</span>
-			<input type="checkbox" id="#laptop">
-			<span>HP</span>
-			<input type="checkbox" id="#laptop">
+ 
+	<div>
 		
-        <br>
-			<label for="#age"> Age*</label>
-			<input type="number" id="#age">
-        <br>
-			<lable for="#dob">DOB*</lable>
-			<input type="date" id="#dob">
-	     <br>
-
-			<label for="#password">Password*</label>
-			<input type="password" id="#password">
-			
-        <br>
-
-			<label for="button">submit button</label>
-			<input type="password" id="button">
-             <br>
-			<label for="portfolio">Web</label>
-			<input type="email" id="portfolio">
+	<label for="gender">Gender*</label>
+	<input type="radio" name="gender" id="gender" required>Male
+ 
+<!-- 	<label for="gen_inp"></label> -->
+	<input type="radio" name="gender" id="gender" required>Female
+</div> 
+		<br>
+ 
+	<div> 
+			<label for="laptop">Laptop Brands</label>
+			<select name="laptop" id="laptop">
+				<option>select laptop Brands</option>
+				<option>Apple</option>
+				<option>Asus</option>
+				<option>HP</option>
+			</select>
+    </div>
+		<br>
+	<div>
+		<label for="age">Age*</label>
+		<input type="number" name="age" id="age" placeholder="enter your age" required>
 		
-
-	</form>
-
-
+	</div>
+	  <br>
+ 
+	<div>
+			<label for="dob">DOB*</label>
+			<input type="date" name="dob" id="dob" required>
+	</div>
+		<br>
+ 
+	<div>
+			<label for="password">Password*</label>
+			<input type="password" name="password" id="" required>
+	</div>
+	        	<br>
+	<div>
+			<label for="submit_button"></label>
+			<button type="submit" name="submit_button" id="" required>submit button</button>
+	</div>
+		
+		
+</form>
+	
+ 
+ 
+ 
 	
     <script type="text/javascript" src="./script.js">
-</script>
-
+	</script>
+ 
 </body>
-
+ 
 </html>
