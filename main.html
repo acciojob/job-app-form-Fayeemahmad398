@@ -8,7 +8,7 @@
  
 <body>
 	<!-- the entire body must be written by student -->
-	<form id="my-form" method="POST" >
+	<form action="my-form" method="POST" >
 		
 	<div>
 		<label for="name">Name*</label>
@@ -18,55 +18,51 @@
 	<div>
 		<label for="email">Email*</label>
 		<input type="email" name="email" id="email" placeholder="eg: abcd@gmail.com" required>
-	</div> 
-		<br>
+	</div> <br>
  
 	<div>
-		
 	<label for="gender">Gender*</label>
 	<input type="radio" name="gender" id="gender" required>Male
  
-<!-- 	<label for="gen_inp"></label> -->
+	<label for="gen_inp"></label>
 	<input type="radio" name="gender" id="gender" required>Female
-</div> 
-		<br>
+</div> <br>
  
 	<div> 
 			<label for="laptop">Laptop Brands</label>
 			<select name="laptop" id="laptop">
-				<option>select laptop Brands</option>
+				<option>select laptop brand</option>
 				<option>Apple</option>
 				<option>Asus</option>
 				<option>HP</option>
 			</select>
-    </div>
-		<br>
+		</div> <br>
+ 
 	<div>
 		<label for="age">Age*</label>
 		<input type="number" name="age" id="age" placeholder="enter your age" required>
 		
-	</div>
-	  <br>
+	</div> <br>
  
 	<div>
 			<label for="dob">DOB*</label>
 			<input type="date" name="dob" id="dob" required>
-	</div>
-		<br>
+		</div> <br>
  
 	<div>
 			<label for="password">Password*</label>
-			<input type="password" name="password" id="" required>
-	</div>
-	        	<br>
+			<input type="password" name="password" id="password" required>
+		</div> <br>
+ 
 	<div>
 			<label for="submit_button"></label>
-			<button type="submit" name="submit_button" id="" required>submit button</button>
-	</div>
-		<br>
-		<label for="portfolio">portfolio</label>
-		<input type="url" id="portfolio" name="portfolio" placeholder="Enter the url of portfolio">
-		
+			<button type="submit" name="submit_button" id="submit_button" required>submit button</button>
+		</div>
+ 
+ 
+<label for="portfolio">Portfolio</label>
+  <input type="url" name="portfolio" id="portfolio">
+ 
 		
 </form>
 	
